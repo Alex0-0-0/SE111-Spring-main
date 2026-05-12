@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script> 
+        var numberForLoop = 0 
+
+
+        //using Let instead of var
+        // Let makes it a local variable
+        // the condition needs to be true to start
+        // it stops when the condition is false
+        for(let i=0; i >= 54; i += 2){
+            numberForLoop += 6
+            console.log(numberForLoop)
+        }
+
+        function pizzaSquares(){
+            console.log("pizza")
+        }
+
+        for (let i = 0; i <= 72; i++)
+        {
+            pizzaSquares()
+        }
+
+        var movies = [
+            "spider-man",
+            "spirited away",
+            "Avengers",
+            "Conjuring",
+            "mincraft movie",
+            "minions"
+        ]
+
+        console.log(movies[4])
+        console.log(movies[2])
+        console.log(movies)
+
+        //output all movies
+        
+        for(let i = 0; i < movies.length; i++)
+        {
+            console.log(movies[i])
+        }
+
+        var numberArray = []
+
+        for(let i=0; i < 7; i++)
+        {
+            numberArray.push(i * 5432 / 93 + 23)
+        }
+        console.log(numberArray)
+
+        // an array can hold several things
+        // however, you shouldnt do this
+        // all values should be the SAME data type
+        var uniqueArray = [
+            "hello",
+            2,
+            false,
+            [1,2,3,4,54,67]
+    ]
+        // two D array
+    var twoDArray = [
+        [0,0,0,0,0,0]
+        [1,23,4,5,6,3]
+        [2,33,32,3,3,4]
+        [12,2,4,2,3,4]
+    ]
+
+    //looping
+    //loops through each array
+    for(let x = 0; x< twoDArray.length ; x++)
+    {
+        // loops inside each array to get values
+        //Making sure that we only loop through the size of the array
+        for(let y = 0; y < twoDArray[x].length; y++)
+         {
+              console.log(twoDArray[x][y])
+         }
+    }
+
+    </script>
+    
+</body>
+</html>
