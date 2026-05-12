@@ -1,0 +1,178 @@
+/* First way of styling */
+/* Specify a tag */
+
+
+body{
+    /* Flexes the content based on size */
+    display: flex; 
+    justify-content: center;
+    background-color: rgb(83, 81, 87);
+}
+
+#main{
+    border: 5px solid black;
+    width: 1000px;
+    height: 800px;
+    background-color: royalblue;
+
+    
+}
+
+#header{
+    height: 130px;
+    border: 2px dotted white;
+    text-align: center;
+    padding-bottom: 25px;
+/* name of animation*/
+    animation-name: textColorChange;
+    /* how long the duration is*/
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    font-family:'sekuya'
+}
+/*Example of psuedo class*/
+#header:hover{
+    font-size: 100px;
+}
+
+a:visited{
+    color: grey
+}
+
+#nav-bar{
+    height: 50px; 
+    text-align: center;
+    border-top: 2px dotted whitesmoke;
+    border-bottom: 2px dotted whitesmoke;
+    padding-top: 25px;
+}
+
+.nav-btn{
+    border-bottom: 2px solid white;
+}
+
+#content{
+    height:520px;
+    width:650px;
+   
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border:2px solid black;
+    font-family:'sekuya'
+    
+    
+
+}
+
+#loremIpsum{
+    border: 3px double whitesmoke
+}
+
+
+
+/*------------------------------------------------------*/
+
+body{
+    /* Flexes the content based on size */
+    display: flex; 
+    justify-content: center;
+    background-color: rgb(83, 81, 87);
+}
+
+#mains{
+    border: 5px solid black;
+    width: 1000px;
+    height: 850px;
+    background-color: royalblue;
+}
+
+#headers{
+    border: 2px dotted white;
+    text-align: center;
+    
+}
+
+#nav-bars{
+    height: 50px;
+    text-align: center; 
+    border-top: 2px dotted whitesmoke;
+    border-bottom: 2px dotted whitesmoke;
+    padding-top: 25px;
+}
+
+.nav-btns{
+    border-bottom: 2px solid white;
+}
+
+#contents{
+    border: 2px dotted white;
+
+    font-family:'sekuya';
+    font-size: 12px;
+}
+
+/*Animations */
+/* Keyframes define an animation */
+@keyframes textColorChange{
+    from{
+        color:black
+    }
+    to{
+        color:magenta
+    }
+}
+
+@keyframes sizeChange{
+    from{
+        font-size: 10px;
+    }
+    to{
+        font-size: 69px;
+    }
+}
+
+@keyframes percentageAnimation{
+
+    0%{
+        background-color: slateblue;
+        font-size: 0px;
+    }
+    10%{
+        background-color: darkcyan;
+        border: 5px double palegoldenrod;
+        font-size: 10px;
+        transform: rotate(2478deg);
+    }
+    11%{
+        background-color: fuchsia;
+        border: 5px double forestgreen;
+        font-size: 20px;
+    }
+    21%{
+        background-color: darkcyan;
+        border: 10px double palegoldenrod;
+        font-size: 20px;
+    }
+    48%{
+        background-color: white;
+        border: 10% double palegoldenrod;
+        font-size: 0px;
+    }
+    60%{
+        background-color: lime;
+        border: 10% double palegoldenrod;
+        font-size: 20%;
+    }
+    67%{
+        background-color: salmon;
+        border: 5px double indianred;
+        font-size: 10px;
+    }
+    99%{
+        background-color: yellowgreen;
+        border: 0px dotted aqua;
+        font-size: 10px;
+    }
+}

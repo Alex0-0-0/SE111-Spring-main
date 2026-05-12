@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 | Javascript</title>
+</head>
+<body>
+    
+    <script>
+        
+        //this is a comment!
+        //hello
+        //this is a fun comment
+        
+        //example of variable
+        var a = 6 
+
+        // string 
+        var b = "GitHub"
+
+        // boolean
+        var c = true
+
+        //logging something to the console(F12)
+        console.log("test")
+    
+        //you can "pass" numbers
+        console.log(52)
+
+        // you can also pass variables
+        console.log(b)
+
+        //if statements
+        //conditional operators 
+        // >= Greater than/equal to
+        // <= Less than/equal to
+        // > Greater than
+        // < less than
+        // != not equal ( Only cares about the values)
+        // == equal to (Only care about values)
+        // !== not equal to value and type
+
+        var numOne = 2 
+        var numTwo = 49 
+        var numThree = 1 
+        var numFour = 4063
+
+        if (numThree !== numFour){
+            console.log(numOne + numTwo + numThree + numFour)
+        }
+
+        if(numOne >= 0 && numTwo > 0){
+            console.log(numThree - numFour)
+        }
+
+        if(numOne >=2 || numTwo > 0){
+            console.log("This means the Or statement is true")
+        }
+
+        //arithmatic
+        var x = 75
+        // adds one
+        x++ 
+
+        console.log(x)
+
+        //adding five
+        x = x + 5
+        console.log(x)
+
+        //adds five to x, same as above js short
+        x += 5
+        console.log(x)
+
+        var y = 1000
+
+        x += y
+        console.log(x)
+
+        x = y
+        console.log(x)
+
+        x *= 2 
+        console.log(x)
+
+        //minus 1
+        x--
+        console.log(x)
+
+        //functions and calling
+        function example(){
+            console.log("Hello World")
+        }
+        example()
+
+        // function with parameters
+        function add(x,y){
+            return x+y
+        }
+
+        //calling the add function
+        var fName = "Alex"
+        var lName = "Fontes"
+
+        var name = add(fName, lName)
+        console.log(name)
+
+        // more parameters
+        function subtract(x,y,z,a){
+            return x-y-z-a
+        }
+            
+        var subX = 100
+        var subY = 75
+        var subZ = 50
+        var subA = 25
+
+        var sub = subtract(subX, subY, subZ, subA)
+        console.log(sub)
+
+
+        // Alerts make something pop up
+        alert("Hello this is an alert")
+        alert(subtract(subX, subY, subZ, subA))
+        alert("Tacos are cool")
+
+        var firstName = prompt("What is your name")
+        console.log(firstName)
+
+        //prompt stores values as strings
+        var num1 = Number(prompt("What is the fist number"))
+        var num2 = Number(prompt("What is the second number"))
+
+        console.log(add(num1,num2))
+
+
+
+
+    </script>
+</body>
+</html>

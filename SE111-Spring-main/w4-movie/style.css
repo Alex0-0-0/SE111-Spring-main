@@ -1,0 +1,112 @@
+body{
+    display:flex; 
+    justify-content: center;
+    background-color: black;
+    font-family:'sekuya';
+    font-size: small;
+    
+}
+
+
+
+#header{
+    color:aliceblue;
+    text-align: center;
+    font-family:'sekuya';
+    animation-name: myAnimate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+  
+#nav-bar{
+    text-align: center;
+}
+
+
+#content{
+    align-content: center;
+    text-align: center;
+    border: 5px solid rgb(255, 255, 255);
+    width: 1000px;
+    height: 1050px;
+
+}
+
+h2{
+    color:aliceblue;
+}
+
+
+p{
+    color: aliceblue;
+}
+
+/* CAST INT*/
+body{
+    display:flex; 
+    justify-content: center;
+    background-color: black;
+    font-family:'sekuya';
+    font-size: small;
+    
+}
+
+#header2{
+    color:aliceblue;
+    text-align: center;
+    font-family:'sekuya'
+
+}
+
+#footer{
+    text-align: center;
+}
+
+
+
+
+/* REVIEW SHEETS*/
+
+#contentr{
+    align-content: center;
+    text-align: center;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+#info{
+    color:aliceblue;
+    align-content: center;
+    text-align: center;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes myAnimate {
+    0% {color: aliceblue;}
+    25%{color: rgb(rgb(68, 138, 170), rgb(36, 83, 114), rgb(79, 79, 170)) ;}
+    50%{color:blueviolet;}
+    75%{color:purple;}
+    100%{color: aliceblue;}
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 homework</title>
+</head>
+<body>
+    
+    <script>
+
+        alert("Hello. \n Welcome to the net income machine")
+
+        var pay = Number(prompt("What is your hourly pay?"))
+        var hour = Number(prompt("How many hours do you work?"))
+        var tax = Number(prompt("What is the tax rate as a decimal?"))
+
+        function gross(pay,hour){
+            return pay * hour
+        }
+
+        var additive = gross(pay,hour)
+
+    
+
+        function uncle(additive,tax){
+            return additive * tax
+        }
+
+        var takeaway = uncle(additive,tax)
+
+        function net(additive,takeaway){
+            return additive - takeaway
+        }
+
+        var total = net(additive,takeaway)
+
+
+        console.log("Gross Pay: $" + additive);
+        console.log("Uncle Sam's Share: $" + takeaway);
+        console.log("Net Pay: $" + total);
+ 
+
+    
+       
+        alert(
+            "Gross Pay: $" + additive + "\n" + 
+            "Uncle Sam's share: $" + takeaway + "\n" +
+            "Net Pay: $" + total + "\n"
+        )
+
+
+// This was not very easy lol 
+    </script>

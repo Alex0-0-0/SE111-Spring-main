@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <h1> Week 5 tables and forms</h1>
+        <br>
+        <h2> Table example </h2>
+
+        <table> 
+            <!-- Very top of table -->
+            <thead> 
+                <!-- Setting a new room -->
+                <tr> 
+                    <td> First name</td>
+                    <td> Last Name</td>
+                    <td> Program</td>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td> Joel</td>
+                    <td> Hanson</td>
+                    <td> Teacher</td>
+                </tr>
+                <tr>
+                    <td> Alex </td>
+                    <td> Fontes</td>
+                    <td> Student</td>
+                </tr>
+                <tr> 
+                    <td> Mikha'la</td>
+                    <td> Campbell </td>
+                    <td> Student </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+            <h2> Favorite Foods </h2>
+        <table>
+            <thead>
+                <tr> 
+                    <td> Favorite food</td>
+                    <td> Location </td>
+                    <td> Rating </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td> Crab Rangoon </td>
+                    <td> Sakura </td>
+                    <td> 9/10 </td>
+                </tr>
+                <tr> 
+                    <td> Philly Cheesesteak </td>
+                    <td> Bajas </td>
+                    <td> 10/10 </td>
+                </tr>
+                <tr> 
+                    <td> Pad thai </td>
+                    <td> Pho Horns </td>
+                    <td> 8/10 </td>
+                </tr>
+                <tr> 
+                    <td> Chicken Fried rice </td>
+                    <td> Apsara </td>
+                    <td> 9/10 </td>
+                </tr>
+                <tr> 
+                    <td> Arroz con gondules </td>
+                    <td> My mother </td>
+                    <td> 10/10 </td>
+                </tr>
+                <tr> 
+                    <td> Cookie </td>
+                    <td> Cafe Colombia </td>
+                    <td> 9/10 </td>
+                </tr>
+            </tbody>
+        </table>
+    <hr> 
+    <hr> 
+    <hr> 
+    <hr>
+    <br>
+    <h2> Basic Form example</h2>
+
+    <form acton="#" method="post">
+        <!-- Input tags are inline  -->
+         <!-- Defining a text field -->
+        <input type="text" name="username" placeholder="Enter Username...">
+        <br>
+        <input type="text" name="username" placeholder="Enter Password..." required>
+        <br>
+        <!-- Defining a button -->
+        <input type="button" name="abutton" value="Click Me">
+    </form>
+<hr> 
+    <form action="#" method="get">
+        <!-- Defining a table inside a form -->
+         <h2> Table with input </h2>
+        <table>
+            <thead> 
+                <tr>
+                    <td>Label</td>
+                    <td> input </td>
+                </tr>
+            </thead>
+            <!-- Defining a LOt of input types( For Homework ) -->
+            <tbody> 
+                <tr>
+                    <td> Text input </td>
+                    <td><input type="text" name="text-input"></td>
+                </tr>
+
+                <tr> 
+                    <td> Checkbox</td>
+                    <td><input type="checkbox" name="checkbox"></td>   
+                </tr>
+
+                <tr> 
+                    <td> Color </td>
+                    <td><input type="color" name="color"></td>
+                </tr>
+
+                <tr> 
+                    <td>Date</td>
+                    <td><input type="date" name="date"></td>
+                </tr>
+                
+                <tr> 
+                    <td> File</td>
+                    <td><input type="file" name="file"></td>
+                </tr>
+
+                <tr> 
+                    <td> Time </td>
+                    <td><input type="time" name="time"> </td>
+                </tr>
+
+                <tr>
+                    <td>Radio Button</td>
+                    <td>
+                        <!-- Labels are for buttons -->
+                         <!-- They require a for attribute which must match the name or id -->
+                        <!-- Defining the same name allows us to pick obly one -->
+                         <label for="yes"> Yes: </label>
+                        <input type="radio" name="yes-or-no" value="yes">
+                        <br> 
+                        <label for="no">No: </label>
+                        <input type="radio" name="yes-or-no" value="no" id="no">
+                        <br>
+                        <label for="maybe">Maybe:</label>
+                        <input type="radio" name="yes-or-no" value="maybe" id="maybe">
+                     </td>
+                </tr>
+
+                <!-- Some inputs have special tags -->
+                <tr>
+                    <td> Text Area </td>
+                    <!-- Like text area! Cols is heights and rows is the width -->
+                    <td><textarea name="textarea" cols="30" rows="10" placeholder="Enter your message"></textarea> </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </form>
+</body>
+</html>
