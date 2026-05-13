@@ -7,6 +7,28 @@
 </head>
 <body>
 
+    <!-- setting up movies -->
+    <div id="FavoriteMovies">
+        <h2> My favorite movies are : </h2>
+
+        <ul id="listOfMovies">
+
+
+
+        </ul>
+     </div>
+
+    <div id="FavoriteFoods">
+        <h2> My favorite foods are: </h2>
+
+        <ul id="listOfFood">
+
+
+
+        </ul>
+    
+
+    </div>
 
     <script> 
         var numberForLoop = 0 
@@ -69,9 +91,9 @@
     ]
         // two D array
     var twoDArray = [
-        [0,0,0,0,0,0]
-        [1,23,4,5,6,3]
-        [2,33,32,3,3,4]
+        [0,0,0,0,0,0],
+        [1,23,4,5,6,3],
+        [2,33,32,3,3,4],
         [12,2,4,2,3,4]
     ]
 
@@ -87,6 +109,83 @@
          }
     }
 
+
+    // Objects
+
+    var person = {
+        first: "joel",
+        last:"Hanson"
+    }
+
+    console.log(person.first)
+    console.log(person.last)
+
+    //changing
+
+    person.first = " gage"
+    person.last = "Carrothead"
+
+    // outputting new values
+    console.log(person.first)
+    console.log(person.last)
+
+    var person = {
+        first:"tom",
+        last:" Henderson"
+    }
+
+    console.log(person.first)
+
+    var car = {
+        wheels : 2000,
+        hasEngine : "true",
+        oil: "synthetic",
+        windows : 1,
+        drive : function() { console.log("vroom vroom")}
+    }
+
+    console.log("This car has" + car.wheels + " wheels")
+    // call the function
+    car.drive()
+
+        // fun examples with for loops,objects and arrays
+
+        var unorderedMovieList = document.querySelector("#listOfMovies")
+
+
+        // looping through the movies array
+        for(let i = 0; i < movies.length; i++ )
+    {
+        // adding to the html with each movie
+        unorderedMovieList.innerHTML += "<li>" + movies[i] + "</li>"
+    }
+
+
+
+    var favoriteFood = [
+        "Crab rangoon",
+        "Philly cheesesteak",
+        "Loaded tater tots",
+        "fried rice of any kind",
+        "cajun fries",
+        "Arroz con gondules",
+        "Cookies"
+    ]
+    
+
+        var unorderedFoodList = document.querySelector("#listOfFood")
+
+        for(let i = 0; i < favoriteFood.length; i++)
+    {
+        unorderedFoodList.innerHTML += "<li>" + favoriteFood[i] + "</li>"
+    }
+
+
+    // how to loop through keys in an object
+    for(let key in car)
+    {
+        console.log(car[key])
+    }
     </script>
     
 </body>

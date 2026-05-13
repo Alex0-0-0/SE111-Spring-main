@@ -84,8 +84,8 @@
 
             var fName = document.querySelector("#first")
             var lName = document.querySelector("#last")
-            var hours = document.querySelector("#hours")
-            var rate = document.querySelector("#rate")
+            var hourText = document.querySelector("#hours")
+            var rateText = document.querySelector("#rate")
             
 
 
@@ -93,8 +93,8 @@
             
             console.log(fName.value)
             console.log(lName.value)
-            console.log(hours.value)
-            console.log(rate.value)
+            console.log(hourText.value)
+            console.log(rateText.value)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
             var full = (fName.value) + (lName.value);
@@ -105,8 +105,8 @@
 
             //convert both hours and rate to Number() data types
             
-           var hours = Number(hours)
-           var rate = Number(rate)
+           var hourTwo = Number(hourText.value)
+           var rateTwo = Number(rateText.value)
 
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
@@ -114,36 +114,38 @@
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
             
-            function gross(hours,rate)
+            function gross(hourTwo,rateTwo)
                 {
-                   return hours * rate
+                   return hourTwo * rateTwo
                 }
 
-               var grossmon = gross()
+             
 
-            function taxAmount(grossmon)
+            function taxAmount(gross)
             {
-                return grossmon * .2
+                return gross * .2
             }
-             var taxed = taxAmount()
+          
+            var taxed = taxAmount(gross)
            
-            function netPay(grossmon,taxed)
+            function netPay(gross,taxed)
             {
-              return  grossmon - taxed
+              return  gross - taxed
             }
 
-             var net = netPay()
+            
     
 
             //console.log() all three processed values, rounded to the second decimal place
-            console.log(gross(hours,rate))
+            console.log(gross(hourTwo,rateTwo))
             console.log(taxAmount(2))
-            console.log(netPay(2))
-
+            console.log(netPay(gross,taxed))
+            
+            var totHr = gross()
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
             var finalMessage = `Full name:${full} <br>
-            hours worked:${hours.tofixed(2)} <br> 
+            hours worked:${totHr.tofixed(2)} <br> 
             hourly rate:${rate.tofixed(2)}<br>`
 
         
