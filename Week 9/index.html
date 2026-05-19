@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent and Child Elements</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="divContainer">
+        <p id="removeExample"> We are going to remove this p tag</p>
+        <br>
+    </div>
+
+    <input type="button" id="killTheChild" value="kill the child" class="bigText">
+
+
+
+    <br>
+    <br>
+
+
+    <div id="foodContainer">
+        <img id="food" src="steak.webp" style="width:45%; height:45%">
+
+
+        <br>
+        <input type="button" id="changeFood" value="I like crabrangoon instead!">
+    </div>
+
+
+
+    <script>
+
+        // Getting the divContainer
+        var divContainer = document.querySelector("#divContainer")
+
+
+        // creating the p tag
+        var pTag = document.createElement('p')
+
+        // Appending the child
+        // keep in mind that element created this way are empty when made
+
+        divContainer.appendChild(pTag)
+
+        // filling the pTag
+
+        pTag.innerHTML += " This was created in javascript"
+
+        // We can add attributes to the tags
+        // Ex:
+        // ID
+        // style
+        // href
+        // class
+        // src
+
+        // setting the class
+        pTag.setAttribute('class', 'bigText')
+
+        // Adding a style
+        pTag.setAttribute('style', "border: 1px solid black")
+
+        // Appending the child
+        divContainer.appendChild(pTag)
+
+        // A remove function
+        function removeTheChild()
+        {
+            var nate = document.querySelector("#removeExample")
+
+            divContainer.removeChild(nate)
+        }
+
+            // getting the kill button
+        var killButton = document.querySelector("#killTheChild")
+
+            // Adding removeTheChild to the button
+            killButton.addEventListener('click', removeTheChild)
+
+            
+        function iLikeCrabRangoon()
+        {
+            var changeFood = document.querySelector("#food")
+            changeFood.setAttribute("src","crab.webp")
+        }
+
+            var changeButton = document.querySelector("#changeFood")
+            changeFood.addEventListener("click",iLikeCrabRangoon)
+
+
+    </script>
+
+
+</body>
+</html>
